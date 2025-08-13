@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+html,
+body {
+  background-color: #020202;
+  user-select: none;
+  font-family: "Audiowide", sans-serif;
+}
+
+.wrapper {
+  padding: 25px 35px 0 35px;
+}
+
+.container {
+  background: linear-gradient(120deg, #d6d0d0 0%, #f5eded 100%);
+  max-width: 500px;
+  border-radius: 35px;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+/* //HEADER STYLE// */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.burger__wrapp {
+  width: 40px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.burger__wrapp div:nth-child(1) {
+  width: 33px;
+}
+
+.burger__wrapp div:nth-child(2) {
+  margin: 7px 0;
+  width: 15px;
+}
+
+.burger__wrapp div:nth-child(3) {
+  width: 25px;
+}
+
+.burger__item {
+  width: 100%;
+  height: 6px;
+  background-color: #010101;
+
+  border-radius: 5px;
+}
+
+.icon__notification {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* ///////////////////// */
+
+/* //FOOTER STYLE// */
+
+.footer {
+  width: 100%;
+  border-radius: 35px;
+  background: linear-gradient(10deg, #5ec6ff 0%, #9b32fd 100%);
+
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.menu_item {
+  cursor: pointer;
+  width: 40px;
+  transition: 0.3s ease-in;
+  filter: drop-shadow(0px 0px 4px #494c47);
+}
+
+.footer .menu_item {
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer .menu_item:hover {
+  scale: 1.1;
+  filter: drop-shadow(0px 0px 4px #fff);
+}
+
+.present {
+  background-image: url(icons/free-icon-font-gift-5527958.png);
+}
+
+.setting {
+  background-image: url(icons/free-icon-font-settings-3917058.png);
+}
+
+.email {
+  background-image: url(icons/elemove.png);
+}
+
+.home {
+  background-image: url(icons/home.png);
+}
+
+.active {
+  transition: 0.3s ease-in-out;
+  filter: drop-shadow(0px 0px 3px #fff);
+  opacity: 0.9;
+  transform: none;
+  scale: none;
+}
+
+.present.active {
+  background-image: url(icons/free-icon-font-gift.png);
+}
+
+.home.active {
+  background-image: url(icons/home_active.png);
+}
+
+.setting.active {
+  background-image: url(icons/free-icon-font-settings.png);
+}
+
+.email.active {
+  background-image: url(icons/free-icon-font-envelope.png);
+}
+/* ////////////////////// */
+
+/* //CATALOG SECTION// */
+
+.catalog__title {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+.catalog__wrapper {
+  gap: 10px;
+  display: flex;
+  overflow-x: auto;
+  margin: 30px 0 25px 35px;
+  padding: 7px;
+}
+
+::-webkit-scrollbar {
+  width: none;
+  color: transparent;
+  height: none;
+  display: none;
+}
+
+.catalog__item {
+  background: linear-gradient(70deg, #d6d3c7bb 0%, #acab9fbb 100%);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #121212c0;
+
+  font-weight: 900;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.catalog__item:hover {
+  transform: scale(1.03);
+  color: #000;
+}
+
+.active___button {
+  background: linear-gradient(120deg, #5ec6ff 0%, #9b32fd 100%);
+  color: #fff;
+}
+
+.active___button:hover {
+  color: #fff;
+}
+
+/* ///// Action section////// */
+/* /////// */
+
+.action__section {
+  margin: 20px 0 0 35px;
+}
+
+.action__title {
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+
+.cards__wrapper {
+  margin: 20px 0 35px 0;
+  overflow-x: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+}
+
+.frog__card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 430px;
+  height: 290px;
+  padding: 50px 50px 25px 25px;
+  position: relative;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease-in;
+}
+
+.like__wrapper {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.like {
+  z-index: 100;
+  width: 20px;
+  transition: filter 0.3s ease-in-out;
+  opacity: 0.9;
+}
+
+.like:hover {
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+.like__wrapper::after {
+  content: "";
+  background-color: #09090982;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+
+  position: absolute;
+
+  left: 340px;
+  top: 31px;
+}
+
+.star__wrapper {
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.star__wrapper:hover {
+  filter: drop-shadow(0 0 2px #fff);
+}
+
+.star {
+  width: 15px;
+}
+
+.download {
+  width: 20px;
+}
+
+.game__name {
+  margin: 7px 0;
+  color: #f9f9f9;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+}
+
+.download__wrapper {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  transition: filter 0.3s ease-in;
+}
+
+.download__wrapper:hover {
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+.download {
+  opacity: 0.6;
+}
+
+.download__counter {
+  color: #fff;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+
+/* //// Top game catalog style /// */
+/* /// */
+
+.top__action__game__section {
+  overflow: auto;
+  max-height: 70vh;
+  padding: 20px 5px 0 0;
+}
+.top__game__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+  align-items: center;
+}
+.top__game__title {
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: 0.2rem;
+}
+.button__see__all a {
+  text-decoration: none;
+  color: #8400ff;
+  font-weight: 900;
+  font-size: 19px;
+  transition: 0.3s ease-in-out;
+  margin: 0 10px 0 0;
+}
+
+.button__see__all {
+  transition: 0.3s ease-in-out;
+}
+.button__see__all:hover {
+  scale: 1.05;
+}
+
+.button__see__all a:hover {
+  color: #dd00ff;
+}
+.top__game__cards__wrapper {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.top__game__card {
+  background-color: #8080803b;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 0 20px;
+  border-radius: 20px;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.top__game__card:hover {
+  transform: translate(3px, -5px);
+  background-color: #8c8787a7;
+}
+
+.top__game__img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  margin: 0 20px 0 0;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.top__game__img img:hover {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 0 0 #fff);
+}
+
+.top__game__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  gap: 20px;
+}
+.top__game__name {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+}
+
+.top__game__star {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.star__wrapp {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.star__wrapp:hover {
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.top__game__star img {
+  width: 11px;
+  height: 11px;
+}
+.star__counter {
+  font-size: 11px;
+}
+.top__game__download {
+  width: 11px;
+}
+
+.top__game__downloadp {
+  font-size: 11px;
+}
+
+.download__wrapp {
+  transition: filter 0.3s ease-in-out;
+}
+
+.download__wrapp:hover {
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.top__game__play {
+  display: flex;
+  justify-content: end;
+}
+.top__game__play div {
+  background: linear-gradient(10deg, #4ca0cd 0%, #520f90 100%);
+  border: none;
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #b59999;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.top__game__play div:hover {
+  color: #fff;
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+.download__wrapp {
+  display: flex;
+  margin: 0 15px 0 30px;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
