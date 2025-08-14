@@ -16,3 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
     element.addEventListener("click", onClick);
   }
 });
+
+const anim = document.getElementById("animation");
+const modal = document.getElementById("modal__burger");
+const burgerMenu = document.querySelector(".burger__wrapp");
+const anim__wrapp = document.querySelector(".anim__wrapp");
+
+burgerMenu.addEventListener("click", () => {
+  anim.style.visibility = "unset";
+  modal.style.transform = "translate(0 , 0)";
+  anim__wrapp.style.visibility = "unset";
+});
+
+anim.addEventListener("click", () => {
+  anim.style.visibility = "hidden";
+  modal.style.transform = "translate(-100%, 0)";
+  anim__wrapp.style.visibility = "hidden";
+});
